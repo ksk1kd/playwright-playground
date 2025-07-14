@@ -1,11 +1,10 @@
-import { test, expect } from '@playwright/test';
-import AxeBuilder from '@axe-core/playwright';
+import { test, expect } from "./a11y-test"
 
-test.describe('homepage', () => {
-  test('should not have any automatically detectable accessibility issues', async ({ page }) => {
+test.describe('top-page', () => {
+  test('should not have any automatically detectable accessibility issues', async ({ page, makeAxeBuilder }) => {
     await page.goto('http://localhost:5173/');
 
-    const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
+    const accessibilityScanResults = await makeAxeBuilder().analyze();
 
     expect(accessibilityScanResults.violations).toEqual([]);
   });
