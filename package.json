@@ -12,6 +12,7 @@
     "test": "playwright test"
   },
   "dependencies": {
+    "@axe-core/playwright": "^4.10.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
