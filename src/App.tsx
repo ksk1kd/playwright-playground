@@ -1,7 +1,11 @@
 function App() {
   return (
     <>
-      <div className="container">Contents</div>
+      <main>
+        <div className="container">
+          <h1>Top Page</h1>
+        </div>
+      </main>
     </>
   )
 }
