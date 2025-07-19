@@ -1,3 +1,5 @@
+import { CurrentTimeDisplay } from './components/CurrentTimeDisplay'
+
 function App() {
   return (
     <>
@@ -22,6 +24,8 @@ function App() {
               <option value="blue">Blue</option>
             </select>
           </div>
+
+          <CurrentTimeDisplay />
         </div>
       </main>
     </>
