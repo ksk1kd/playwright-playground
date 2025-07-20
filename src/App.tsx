@@ -1,3 +1,4 @@
+import { Box } from './components/Box'
 import { CurrentTimeDisplay } from './components/CurrentTimeDisplay'
 import { UserForm } from './components/UserForm'
 
@@ -9,6 +10,7 @@ function App() {
           <h1>Top Page</h1>
           <UserForm />
           <CurrentTimeDisplay />
+          <Box />
         </div>
       </main>
     </>
