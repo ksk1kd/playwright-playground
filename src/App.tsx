@@ -1,5 +1,6 @@
 import { Box } from './components/Box'
 import { CurrentTimeDisplay } from './components/CurrentTimeDisplay'
+import { NewTabButton } from './components/NewTabButton'
 import { UserForm } from './components/UserForm'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           <UserForm />
           <CurrentTimeDisplay />
           <Box />
+          <NewTabButton />
         </div>
       </main>
     </>
