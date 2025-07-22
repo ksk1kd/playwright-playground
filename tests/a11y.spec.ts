@@ -1,8 +1,10 @@
 import { test, expect } from "./a11y-test"
+import { HomePage } from './pages/home-page';
 
 test.describe('top-page', () => {
   test('should not have any automatically detectable accessibility issues', async ({ page, makeAxeBuilder }) => {
-    await page.goto('http://localhost:5173/');
+    const homePage = new HomePage(page);
+    await homePage.goto();
 
     const accessibilityScanResults = await makeAxeBuilder().analyze();
 
