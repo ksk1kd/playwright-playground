@@ -94,5 +94,9 @@ export default defineConfig({
     toMatchAriaSnapshot: {
       pathTemplate: '__snapshots__/{testFilePath}/{arg}{ext}',
     },
+    toHaveScreenshot: {
+      pathTemplate: '__visual-comparisons__/{testFilePath}/{/projectName}/{arg}{ext}',
+      maxDiffPixels: 120,
+    },
   },
 });
