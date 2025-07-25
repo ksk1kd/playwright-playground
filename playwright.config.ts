@@ -89,4 +89,10 @@ export default defineConfig({
   //   url: 'http://localhost:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+
+  expect: {
+    toMatchAriaSnapshot: {
+      pathTemplate: '__snapshots__/{testFilePath}/{arg}{ext}',
+    },
+  },
 });
